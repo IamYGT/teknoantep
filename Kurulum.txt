@@ -1,0 +1,13 @@
+** PHP Sürümünüzü 7.2 olarak ayarlayýn, nasýl yapýlacaðýna dair bilginiz yoksa hosting firmanýzdan talep edebilirsiniz,
+** Dosyalarý web hosting alanýnýzda public_html/ httpdocs içerisine aktarýnýz.( Kontrol paneline göre deðiþiklik gösterebilir )
+** Hosting panelinizden yeni bir veritabaný oluþturarak karakter setini utf8_turkish_ci olarak ayarlayýn ve veritabaný klasöründe bulunan rehberv3plus.sql dosyasýný import edin. (Düþük sürüm veritabaný motorlarýnda hata oluþabilir)
+** include/database.php dosyasýný açarak oluþturduðunuz veritabaný kullanýcý adý, veritabaný adý, veritabaný kullanýcý þifresi bilgilerini girin.
+** veritabanýnýza PhpMyAdmin üzerinden ulaþýp dbo_siteayar tablosunu seçin site_url sütununa alanadiniz.com olacak þekilde alan adýnýzý girin, ayný sýrada bulunan kod sütununa tualyazilim.com müþteri panelinizdeki lisans kodunu girin,
+** web sitenize girerek çalýþýp çalýþmadýðýný kontrol edin
+** yönetim panelinize alanadýnýz.com/KWPanel - k.adý : admin@admin.com / þifre : admin bilgileri ile giriþ yaparak en alt solda bulunan Site Genel Ayarlarý bölümünden Mail Ayarlarý bölümüne girerek mail bilgilerinizi girin. (Eski mail sunucularýnda gönderim hatasý oluþabilir) ve sýrasý ile aþaðýda bulunan google harita anahtarýný ilgili alana, google recaptcha kodunuzu ilgili alanlara girin ( recaptcha kodunuzu kendinize ait gmail hesabý ile alýnýz )
+
+Veritabanýnýzý utf8_turkish_ci olarak seçin, baðlantýda bulunan videodan yardým alabilirsiniz : https://www.tualyazilim.com/blog/25/turkce-karakter-hatasi-cozumu/
+
+
+Son olarak lütfen cpaneliniz üzerinden yeni cron iþi ekleyiniz 
+( hergün günde 2 defa çalýþacak biçimde php -q /home/CPANELKULLANICIADI/public_html/system/cron.php )
